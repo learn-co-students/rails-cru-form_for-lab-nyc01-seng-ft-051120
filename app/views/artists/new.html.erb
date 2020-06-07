@@ -1,0 +1,12 @@
+<h3>To submit a new artist please type their information below</h3>
+
+<%=form_for(@artist) do |v|%>
+<label>Name:</label>
+<%= v.text_field :name %><br>
+
+<label>Bio:</label>
+<%= v.text_area :bio %>
+<%=v.submit%><br>
+
+<%= link_to "Go back to the home page",artists_path%>
+<%end%>

@@ -1,0 +1,7 @@
+<h1>Our genres</h1>
+<%@genre.each do |v|%>
+<div><%=link_to v.name, genre_path(v)%></div>
+<p>-----------</p>
+<br>
+<%end%>
+<%=link_to "Make a new genre",new_genre_path%>
