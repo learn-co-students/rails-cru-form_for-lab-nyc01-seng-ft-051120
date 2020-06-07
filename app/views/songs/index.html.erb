@@ -1,0 +1,7 @@
+<h1>Our Songs</h1>
+<%@songs.each do |v|%>
+<p><%=link_to v.name, song_path(v)%></p>
+<p>-----------</p>
+<br>
+<%end%>
+<%=link_to "Make a new a song",new_song_path%>
